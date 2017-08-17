@@ -40,7 +40,7 @@ function createTemplate (data) {
                     <body>
                         <div class="container">
                         <div>
-                         <img src="/ui/madi.png"/>
+                         <img src="/ui/Logo_2.jpg"/>
                         </div>
                                 <div>
                                      <a href="/"> Home </a>
