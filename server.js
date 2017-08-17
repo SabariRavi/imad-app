@@ -39,7 +39,6 @@ function createTemplate (data) {
                     </head>
                     <body>
                         <div class="container">
-                            <div>
                                 <div>
                                      <a href="/"> Home </a>
                                 </div>
@@ -52,10 +51,10 @@ function createTemplate (data) {
                                 <div>
                                   ${description}
                                 </div>
-                            </div>
                         </div>
                     </body>
-    </html>`;
+    </html>
+    `;
 return htmlTemplate;
 }
 
