@@ -32,7 +32,6 @@ function createTemplate (data) {
                     <head>
                         <title>
                                 ${title}
-                               
                         </title>
                          <meta name= "viewport" content="width=device-width, initial-scale=1" />
                          <link href="/ui/style.css" type="text/css" rel="stylesheet" />
@@ -40,7 +39,7 @@ function createTemplate (data) {
                     <body>
                         <div class="container">
                         <div>
-                         <img src="/ui/Logo_2.jpg"/>
+                         <img src="/ui/Logo_2.jpg" />
                         </div>
                                 <div>
                                      <a href="/"> Home </a>
