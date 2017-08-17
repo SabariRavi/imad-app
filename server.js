@@ -9,7 +9,7 @@ var articleRing={
     title:'sabarinathan jewellers - Rings',
     heading:'Rings',
     description:'Get the latest collection'
-}
+};
 
 function createTemplate (data) {
     var title=data.title;
