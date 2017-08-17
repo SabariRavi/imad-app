@@ -13,7 +13,7 @@ var articles={
 },
 'article-stud':{
     title:'sabarinathan jewellers - Stud',
-    heading:'Stud',
+    heading:'Studs',
     description:'Get the latest collection'
 },
 'article-choker':{
