@@ -39,8 +39,8 @@ function createTemplate (data) {
                     </head>
                     <body>
                         <div class="container">
-                        <div class="center">
-                         <img src="/ui/Logo2.jpeg" class="img-medium"/>
+                        <div>
+                         <img src="/ui/Logo2.jpeg"/>
                         </div>
                                 <div>
                                      <a href="/"> Home </a>
