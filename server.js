@@ -38,21 +38,18 @@ function createTemplate (data) {
                     </head>
                     <body>
                         <div class="container">
-                        <div>
-                         <img src="/ui/Logo_2.jpg" />
-                        </div>
-                                <div>
-                                     <a href="/"> Home </a>
-                                </div>
-                                <hr/>
-                                <div>
-                                    <h1>
-                                        ${heading}
-                                    </h1>
-                                </div>
-                                <div>
-                                  ${description}
-                                </div>
+                            <div>
+                                 <a href="/"> Home </a>
+                            </div>
+                            <hr/>
+                            <div>
+                                <h1>
+                                    ${heading}
+                                </h1>
+                            </div>
+                            <div>
+                              ${description}
+                            </div>
                         </div>
                     </body>
     </html>
