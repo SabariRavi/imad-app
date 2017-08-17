@@ -5,10 +5,6 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 var articles={
  'article-ring':{
     title:'sabarinathan jewellers - Rings',
@@ -31,7 +27,8 @@ function createTemplate (data ){
     var title=data.title;
     var heading=data.heading;
     var description= data.description;
-var htmlTemplate=`<html>
+    var htmlTemplate=`
+    <html>
                     <head>
                         <title>
                                 ${title}
@@ -57,9 +54,14 @@ var htmlTemplate=`<html>
                             </div>
                         </div>
                     </body>
-                    </html>`;
+    </html>`;
 return htmlTemplate;
 }
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 
 app.get('/:articleName', function(req, res){
     var articleName=req.params.articleName;
