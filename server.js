@@ -52,7 +52,7 @@ app.get('/', function (req, res) {
 
 app.get('/articleRing', function (req, res) {
   //  var articleName=req.params.articleName;
-    res.send(createTemplate(articleRing);
+    res.send(createTemplate(articleRing));
 });
 
 app.get('/ui/style.css', function (req, res) {
