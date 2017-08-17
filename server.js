@@ -37,7 +37,7 @@ function createTemplate (data) {
                                     </h1>
                                 </div>
                                 <div>
-                                  ${descrption}
+                                  ${description}
                                 </div>
                             </div>
                         </div>
