@@ -9,6 +9,63 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articles={
+ 'article-ring':{
+    title:'sabarinathan jewellers - Rings',
+    heading:'Rings',
+    description:'Get the latest collection'
+},
+'article-stud':{
+    title:'sabarinathan jewellers - Stud',
+    heading:'Stud',
+    description:'Get the latest collection'
+},
+'article-choker':{
+    title:'sabarinathan jewellers - choker',
+    heading:'Choker',
+    description:'Get the latest collection'
+}
+};
+
+function createTemplate (data ){
+    var title=data.title;
+    var heading=data.heading;
+    var description= data.description;
+var htmlTemplate=`<html>
+                    <head>
+                        <title>
+                                ${title}
+                                 <link href="/ui/style.css" rel="stylesheet" />
+                                 <meta name= viewport content= width=device-width initial-scale=1/>
+                        </title>
+                    </head>
+                    <body>
+                        <div class=container>
+                            <div>
+                                <div>
+                                     <a href="/"> Home </a>
+                                </div>
+                                <hr/>
+                                <div>
+                                    <h1>
+                                        ${heading}
+                                    </h1>
+                                </div>
+                                <div>
+                                  ${descrption}
+                                </div>
+                            </div>
+                        </div>
+                    </body>
+                    </html>`;
+return htmlTemplate;
+}
+
+app.get('/:articleName', function(req, res){
+    var articleName=req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
