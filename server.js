@@ -61,6 +61,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var comments[];
+app.get('/submit-comment', function (req, res) {//to get the query string from the url
+    var name=res.query.comment;
+    comments.push(name);
+    res.sendFile(JSON.stringify(comments));
+});
+
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
