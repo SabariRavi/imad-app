@@ -17,7 +17,7 @@ $( "#btn" ).click(function(event) {
             }
             
            var ul= $("#lst");
-           ul.innerHTML(stringBuilder);
+           ul.append($.parseHTML(stringBuilder));
          }
      }
  };
