@@ -1,5 +1,8 @@
-$( "#btn" ).click(function() {
-  var comment = $("#cmt_txt").val() ;
+$( "#btn" ).click(function(event) {
+  var comment = $("#comment").val() ;
+  if(comment.trim() === ""){
+      event.preventDefault();
+  }
   //create a request object
   var xmlRequest= new XMLHttpRequest();
      xmlRequest.onreadystatechange= function(){
