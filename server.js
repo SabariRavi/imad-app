@@ -67,7 +67,7 @@ app.get('/submit-comment', function (req, res) {//to get the query string from t
     
     comments.push(name);
     
-    res.sendFile(JSON.stringify(comments));
+    res.send(JSON.stringify(comments));
 });
 
 app.get('/:articleName', function (req, res) {
