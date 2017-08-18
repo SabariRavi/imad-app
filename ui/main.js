@@ -3,7 +3,7 @@ $( "#btn" ).click(function() {
   //create a request object
   var xmlRequest= new XMLHttpRequest();
      xmlRequest.onreadystatechange= function(){
-     if(xmlRequest.readystate === XmlHttpRequest.Done){
+     if(xmlRequest.readystate === XMLHttpRequest.Done){
          if(xmlRequest.status === 200){
              var comments = xmlRequest.responseText;
              comments=JSON.parse(comments);
