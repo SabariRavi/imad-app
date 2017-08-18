@@ -19,7 +19,7 @@ $( "#btn" ).click(function(event) {
             
            var ul= document.getElementById('lst');
            ul.innerHTML=stringBuilder;
-            $("#comment").text='';
+            $("#comment").val("");
          }
      }
  };
