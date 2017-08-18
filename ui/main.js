@@ -16,7 +16,7 @@ $( "#btn" ).click(function(event) {
                  stringBuilder += "<li>" + comments[i] + "</li>";
             }
             
-           var ul= document.getElementById("lst");
+           var ul= document.getElementById('lst');
            ul.innerHTTML(stringBuilder);
          }
      }
