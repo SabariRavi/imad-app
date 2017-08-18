@@ -1,3 +1,4 @@
 $( "#sbt_btn" ).click(function() {
-  alert( $("#cmt_txt").val() );
+  var comment = $("#cmt_txt").val() ;
+  
 });
