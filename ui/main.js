@@ -11,13 +11,13 @@ $( "#btn" ).click(function(event) {
              var comments = xmlRequest.responseText;
              comments=JSON.parse(comments);
              var stringBuilder='';
-            for(var i=0; i < comments.length; i++)
+            for(var i = 0; i < comments.length; i++)
             {
                  stringBuilder += "<li>" + comments[i] + "</li>";
             }
             
-           var ul= $("#lst");
-           ul.replaceWith($.parseHTML(stringBuilder));
+           var ul= document.getElementById("lst");
+           ul.innerHTTML(stringBuilder);
          }
      }
  };
