@@ -9,6 +9,7 @@ $( "#btn" ).click(function(event) {
      if(xmlRequest.readystate === XMLHttpRequest.Done){
          if(xmlRequest.status === 200){
              var comments = xmlRequest.responseText;
+             
              comments=JSON.parse(comments);
              var stringBuilder='';
             for(var i = 0; i < comments.length; i++)
@@ -18,6 +19,7 @@ $( "#btn" ).click(function(event) {
             
            var ul= document.getElementById('lst');
            ul.innerHTML=stringBuilder;
+            $("#comment").text='';
          }
      }
  };
