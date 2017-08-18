@@ -1,4 +1,4 @@
-$( "#sbt_btn" ).click(function() {
+$( "#btn" ).click(function() {
   var comment = $("#cmt_txt").val() ;
   //create a request object
   var xmlRequest= new XmlHttpRequest();
