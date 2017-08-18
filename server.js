@@ -62,8 +62,8 @@ app.get('/', function (req, res) {
 });
 
 var comments[];
-app.get('/submit-comment', function (req, res) {//to get the query string from the url
-    var name=req.query.comment;
+app.get('/submit-name', function (req, res) {//to get the query string from the url
+    var name=req.query.name;
     
     comments.push(name);
     
