@@ -7,10 +7,10 @@ $( "#sbt_btn" ).click(function() {
          if(xmlRequest.status === 200){
              var comments = xmlRequest.responseText;
              comments=JSON.parse(comments);
-             var stringBuilder="";
-            for(i=0; i<comments.length;i++)
+             var stringBuilder='';
+            for(var i=0; i < comments.length; i++)
             {
-                 stringBuilder = stringBuilder +"<li>"+ comments[i]+"</li>";
+                 stringBuilder += "<li>"+ comments[i] + "</li>";
             }
             
             $("#lst").innerHTML(stringBuilder);
